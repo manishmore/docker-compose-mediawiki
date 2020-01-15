@@ -1,7 +1,7 @@
 # docker-compose-mediawiki
 Automate the deployment of MediaWiki Docker-Compose
 
-#Install
+# Install
 
 1) Install Mediawiki with sudo docker container run -d --name mediawiki -p 8082:80 mediawiki
 
