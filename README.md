@@ -1,5 +1,5 @@
 # docker-compose-mediawiki
-Automate the deployment of MediaWiki Docker-Compose
+Automate the deployment of MediaWiki through Docker-Compose
 
 # Install
 
