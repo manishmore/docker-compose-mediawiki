@@ -44,3 +44,26 @@ sudo docker cp LocalSettings.php mediawiki:/var/www/html
 # POST install process:
 
 1) Copy into container sudo docker cp LocalSettings.php mediawiki:/var/www/html
+
+# Method:2:
+
+# By using Docker composer: 
+$ docker-compose up
+
+# Database Connection Details:
+db://localhost
+
+# Copy file: 
+
+$  $HOME/volumes/mediawiki/LocalSettings.php 
+
+# Restart The Containers
+
+sudo chmod 755 $HOME/volumes/mediawiki/LocalSettings.php
+
+# Restart The Containers: 
+
+docker-compose down
+docker-compose up
+
+
