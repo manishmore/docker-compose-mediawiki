@@ -1,7 +1,7 @@
-# docker-compose-mediawiki
+## docker-compose-mediawiki
 Automate the deployment of MediaWiki through Docker-Compose
 
-# Install
+## Install
 
 1) Install Mediawiki with sudo docker container run -d --name mediawiki -p 8082:80 mediawiki
 
@@ -11,11 +11,11 @@ Automate the deployment of MediaWiki through Docker-Compose
 
 4) Put all containers into a new network.
 
-$ sudo docker network connect mediawiki mediawiki
+$ docker network connect mediawiki mediawiki
 
-$ sudo docker network connect mediawiki mediawiki-mysql
+$ docker network connect mediawiki mediawiki-mysql
 
-# Configure
+## Configure
 
 1) Access your wiki at http://<host>:8082
 
@@ -41,13 +41,13 @@ sudo docker cp LocalSettings.php mediawiki:/var/www/html
 
 11) You wiki is ready to use at http://<host>:8082/index.php/Main_Page
 
-# POST install process:
+## POST install process:
 
 1) Copy into container sudo docker cp LocalSettings.php mediawiki:/var/www/html
 
-# Method:2:
+## Method:2:
 
-# By using Docker composer: 
+## By using Docker composer: 
 $ docker-compose up
 
 # Database Connection Details:
@@ -65,5 +65,3 @@ sudo chmod 755 $HOME/volumes/mediawiki/LocalSettings.php
 
 docker-compose down
 docker-compose up
-
-
